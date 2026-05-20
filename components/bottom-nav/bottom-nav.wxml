@@ -1,0 +1,23 @@
+<view class="bottom-nav">
+  <view class="nav-item {{currentTab === 'trace' ? 'nav-active' : ''}}" bindtap="navigateToTrace">
+    <text class="nav-label">产品溯源</text>
+  </view>
+
+  <view class="nav-item {{currentTab === 'products' ? 'nav-active' : ''}}" bindtap="navigateToProducts">
+    <text class="nav-label">产品介绍</text>
+  </view>
+
+  <view class="nav-item nav-center" bindtap="navigateToHome">
+    <view class="nav-circle">
+      <text class="nav-circle-text">首页</text>
+    </view>
+  </view>
+
+  <view class="nav-item {{currentTab === 'diy' ? 'nav-active' : ''}}" bindtap="navigateToDIY">
+    <text class="nav-label">DIY演示</text>
+  </view>
+
+  <view class="nav-item {{currentTab === 'mine' ? 'nav-active' : ''}}" bindtap="navigateToMine">
+    <text class="nav-label">我的</text>
+  </view>
+</view>

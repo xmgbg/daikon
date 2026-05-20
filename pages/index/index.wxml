@@ -1,0 +1,70 @@
+<view class="home-container">
+  <!-- 背景装饰 -->
+  <view class="bg-deco">
+    <view class="deco-circle dc-1"></view>
+    <view class="deco-circle dc-2"></view>
+    <view class="deco-circle dc-3"></view>
+  </view>
+
+  <!-- 头部 -->
+  <view class="header">
+    <image class="logo" src="/images/icons/logo.png" mode="aspectFit"></image>
+    <view class="header-right">
+      <text class="brand-name">包萝万象</text>
+      <text class="brand-tagline">萝卜和咸菜的故事</text>
+    </view>
+  </view>
+
+  <!-- 轮播图 -->
+  <swiper
+    class="carousel"
+    indicator-dots="{{true}}"
+    indicator-color="rgba(255,255,255,0.4)"
+    indicator-active-color="#ffffff"
+    autoplay="{{true}}"
+    interval="{{3000}}"
+    duration="{{500}}"
+    circular="{{true}}"
+  >
+    <swiper-item wx:for="{{carouselItems}}" wx:key="index">
+      <view class="carousel-slide">
+        <image class="carousel-image" src="{{item.image}}" mode="aspectFill" lazy-load></image>
+        <view class="carousel-mask"></view>
+        <view class="carousel-text">
+          <text class="carousel-title">{{item.title}}</text>
+          <text class="carousel-subtitle">{{item.subtitle}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 精选产品 -->
+  <view class="section-header">
+    <view class="section-line"></view>
+    <text class="section-title">精选好物</text>
+    <view class="section-line"></view>
+  </view>
+
+  <view class="products-list">
+    <view
+      class="product-card"
+      wx:for="{{products}}"
+      wx:key="id"
+    >
+      <image class="product-img" src="{{item.image}}" mode="aspectFill" lazy-load></image>
+      <view class="product-info">
+        <text class="product-name">{{item.name}}</text>
+        <text class="product-desc">{{item.shortDesc}}</text>
+      </view>
+      <text class="product-arrow">›</text>
+      <view wx:if="{{item.id === 2}}" class="hot-badge">🔥 爆款</view>
+    </view>
+  </view>
+
+  <!-- 底部品牌语 -->
+  <view class="slogan-section">
+    <view class="slogan-divider"></view>
+    <text class="slogan-text">传承传统工艺，品味自然之味</text>
+    <view class="slogan-divider"></view>
+  </view>
+</view>

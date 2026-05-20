@@ -1,0 +1,126 @@
+<view class="brand-container">
+  <!-- 自定义导航栏 -->
+  <view class="nav-bar" style="padding-top: {{statusBarHeight}}px">
+    <view class="nav-back" bindtap="goBack">
+      <text class="nav-back-icon">‹</text>
+    </view>
+    <text class="nav-title">产品溯源</text>
+    <view class="nav-placeholder"></view>
+  </view>
+
+  <!-- Tab 栏 -->
+  <view class="tab-bar">
+    <view
+      class="tab-item {{currentTab === index ? 'active' : ''}}"
+      wx:for="{{tabs}}"
+      wx:key="index"
+      bindtap="switchTab"
+      data-index="{{index}}"
+    >
+      <text class="tab-text">{{item}}</text>
+      <view class="tab-indicator" wx:if="{{currentTab === index}}"></view>
+    </view>
+  </view>
+
+  <!-- 内容滑动区 -->
+  <swiper
+    class="content-swiper"
+    current="{{currentTab}}"
+    bindchange="onSwiperChange"
+    duration="300"
+  >
+    <!-- 产地 -->
+    <swiper-item>
+      <scroll-view class="tab-content" scroll-y enhanced show-scrollbar="{{false}}">
+        <image class="content-hero" src="/images/posters/poster1.jpg" mode="aspectFill"></image>
+        <view class="content-card">
+          <text class="card-label">📍 产地定位</text>
+          <text class="card-title">松原长岭腰坨子乡</text>
+          <text class="card-desc">东北知名萝卜核心种植加工基地，位于北纬45°黄金种植带，沙质土壤透气性好，昼夜温差大，萝卜品质优异。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🏅 权威认证</text>
+          <text class="card-title">地理标志产品</text>
+          <text class="card-desc">获批地理标志产品认证，官方认定优质产区。沙地沃土 + 充足光照 + 天然温差，成就高品质萝卜核心原料。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🌤️ 自然禀赋</text>
+          <text class="card-desc">松原地处松嫩平原腹地，年日照时数超过2800小时，无霜期长，沙性土壤透气排水性极佳，为萝卜生长提供了得天独厚的自然条件。</text>
+        </view>
+        <view class="spacer"></view>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 原料 -->
+    <swiper-item>
+      <scroll-view class="tab-content" scroll-y enhanced show-scrollbar="{{false}}">
+        <image class="content-hero" src="/images/products/product1.jpg" mode="aspectFill"></image>
+        <view class="content-card">
+          <text class="card-label">🌱 当季直采</text>
+          <text class="card-title">新鲜萝卜产地直供</text>
+          <text class="card-desc">每一批萝卜均采自当季鲜货，从田间到工厂不超过24小时，确保原料的新鲜度和营养成分不流失。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🚫 纯净承诺</text>
+          <text class="card-title">无硫熏·零添加</text>
+          <text class="card-desc">坚持无硫熏处理，不使用防腐剂和人工色素。通过低温脱水技术锁住萝卜天然本味，保留原生营养与脆嫩口感。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🔬 严选标准</text>
+          <text class="card-desc">每批萝卜均需经过大小、色泽、含水量三项筛选标准，确保只有最优质的原料进入腌制环节。</text>
+        </view>
+        <view class="spacer"></view>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 工艺 -->
+    <swiper-item>
+      <scroll-view class="tab-content" scroll-y enhanced show-scrollbar="{{false}}">
+        <image class="content-hero" src="/images/products/product2.jpg" mode="aspectFill"></image>
+        <view class="content-card">
+          <text class="card-label">🧂 古法工艺</text>
+          <text class="card-title">传统慢腌 × 现代技术</text>
+          <text class="card-desc">传承传统腌制工艺，结合现代低温脱水技术，在保留传统风味的同时，实现标准化量产，风味稳定如一。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🏭 标准化生产</text>
+          <text class="card-title">SC 认证工厂</text>
+          <text class="card-desc">在获得 SC 食品生产许可的标准化工厂内完成全部加工工序，全程温湿度监控，低盐健康配方。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">⏳ 匠心慢制</text>
+          <text class="card-desc">不追求速度，只追求品质。从脱水到腌制再到包装，每一道工序都遵循严格的时间参数，确保萝卜咸菜的口感与风味达到最佳状态。</text>
+        </view>
+        <view class="spacer"></view>
+      </scroll-view>
+    </swiper-item>
+
+    <!-- 品控 -->
+    <swiper-item>
+      <scroll-view class="tab-content" scroll-y enhanced show-scrollbar="{{false}}">
+        <image class="content-hero" src="/images/posters/poster2.jpg" mode="aspectFill"></image>
+        <view class="content-card">
+          <text class="card-label">✅ 全程质检</text>
+          <text class="card-title">三道质检防线</text>
+          <text class="card-desc">原料入厂检验 + 生产过程抽检 + 成品出厂全检，三道质检工序层层把关，不合格原料不入厂，不达标产品不出厂。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">🚚 双仓配送</text>
+          <text class="card-title">吉林 + 武汉协同发货</text>
+          <text class="card-desc">吉林产地仓与武汉中心仓双仓布局，产地直供无中间环节，三系产品全程可追溯，新鲜安心直达。</text>
+        </view>
+        <view class="content-card">
+          <text class="card-label">📦 全程可溯</text>
+          <text class="card-desc">每一批次产品均有唯一追溯码，从原料种植地块、采收日期、加工班组到配送路线，全程记录，扫码即可查看。</text>
+        </view>
+        <view class="spacer"></view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <!-- 底部标语 -->
+  <view class="brand-footer">
+    <text class="footer-main">包萝万象·三系萝卜臻品</text>
+    <text class="footer-sub">《—— 匠心承味·全程可溯·安心看得见 ——》</text>
+  </view>
+</view>

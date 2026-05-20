@@ -1,0 +1,23 @@
+<view class="tab-bar">
+  <view class="tab-bar-item" bindtap="switchTab" data-index="0" data-path="/pages/brand/brand">
+    <view class="tab-bar-label {{selected === 0 ? 'active' : ''}}" style="color: {{selected === 0 ? '#ff6b35' : '#999'}}">产品溯源</view>
+  </view>
+  
+  <view class="tab-bar-item" bindtap="switchTab" data-index="1" data-path="/pages/products/products">
+    <view class="tab-bar-label {{selected === 1 ? 'active' : ''}}" style="color: {{selected === 1 ? '#ff6b35' : '#999'}}">产品介绍</view>
+  </view>
+  
+  <view class="tab-bar-item tab-bar-center" bindtap="switchTab" data-index="2" data-path="/pages/index/index">
+    <view class="tab-bar-circle">
+      <view class="tab-bar-circle-text">首页</view>
+    </view>
+  </view>
+  
+  <view class="tab-bar-item" bindtap="switchTab" data-index="3" data-path="/pages/diy/diy">
+    <view class="tab-bar-label {{selected === 3 ? 'active' : ''}}" style="color: {{selected === 3 ? '#ff6b35' : '#999'}}">DIY教程</view>
+  </view>
+  
+  <view class="tab-bar-item" bindtap="switchTab" data-index="4" data-path="/pages/mine/mine">
+    <view class="tab-bar-label {{selected === 4 ? 'active' : ''}}" style="color: {{selected === 4 ? '#ff6b35' : '#999'}}">关于我们</view>
+  </view>
+</view>

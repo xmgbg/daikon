@@ -1,0 +1,100 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #fff5f0 0%, #f5f5f5 100%);
+}
+
+.header {
+  padding: 60rpx 40rpx 40rpx;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 10rpx;
+}
+
+.subtitle {
+  font-size: 24rpx;
+  color: #ff8c5a;
+}
+
+.content {
+  padding: 30rpx;
+}
+
+.count-card {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+  box-shadow: 0 5rpx 20rpx rgba(255, 107, 53, 0.15);
+}
+
+.count-number {
+  font-size: 80rpx;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 10rpx;
+}
+
+.count-text {
+  font-size: 26rpx;
+  color: #999;
+}
+
+.action-card {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 30rpx;
+  text-align: center;
+  box-shadow: 0 5rpx 20rpx rgba(255, 107, 53, 0.15);
+}
+
+.action-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30rpx;
+}
+
+.send-btn {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c5a 100%);
+  color: white;
+  border: none;
+  border-radius: 50rpx;
+  padding: 25rpx 80rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  box-shadow: 0 8rpx 25rpx rgba(255, 107, 53, 0.4);
+}
+
+.send-btn:active {
+  transform: scale(0.95);
+}
+
+.thanks-card {
+  background: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  box-shadow: 0 5rpx 20rpx rgba(255, 107, 53, 0.15);
+}
+
+.thanks-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 20rpx;
+}
+
+.thanks-text {
+  font-size: 26rpx;
+  color: #666;
+  line-height: 2;
+  text-align: center;
+}

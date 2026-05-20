@@ -1,0 +1,39 @@
+<view class="brand-detail-container">
+  <!-- LOGO -->
+  <view class="logo-section">
+    <image class="brand-logo" src="/images/icons/logo.png" mode="aspectFit"></image>
+  </view>
+
+  <!-- 团队成员 -->
+  <view class="content-card">
+    <view class="card-title">团队成员</view>
+    <view class="team-members">
+      <text class="member-name">董雨佳</text>
+      <text class="member-name">赵佳颖</text>
+      <text class="member-name">马志彬</text>
+      <text class="member-name">刘雨佳</text>
+      <text class="member-name">塔拉</text>
+    </view>
+  </view>
+
+  <!-- 抖音号 -->
+  <view class="content-card">
+    <view class="card-title">抖音号</view>
+    <view class="douyin-info">
+
+      <text class="douyin-account" id="douyin-account-text">58929527420</text>
+      <view class="copy-btn" bindtap="copyDouyin">
+        <text class="copy-icon"></text>
+        <text class="copy-text">一键复制</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 品牌介绍 -->
+  <view class="content-card">
+    <view class="card-title">品牌介绍</view>
+    <view class="brand-intro">
+      包萝万象立足吉林松原长岭腰坨子乡，依托东北沙地萝卜核心产区优势，坚持产地直供、原生态选材与标准化生产，以无硫熏、轻盐健康为理念，打造干萝卜丁、即食咸菜萝卜条、DIY 腌制套组三系产品。我们传承传统腌制工艺，结合现代食品品控标准，从原料种植、采收加工到成品出厂全程可追溯，致力于让每一款产品都保留东北食材本味，用青年力量赋能乡村农产，让地道东北风味走进更多家庭餐桌。
+    </view>
+  </view>
+</view>

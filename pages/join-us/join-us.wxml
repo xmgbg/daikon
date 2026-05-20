@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="join-content">
+    <view class="section">
+      <view class="section-title">合作类型</view>
+      <view class="section-content">{{cooperationTypes}}</view>
+    </view>
+
+    <view class="section">
+      <view class="section-title">联系我们</view>
+      <view class="phone-section">
+        <view class="phone-number">{{contactPhone}}</view>
+        <button class="call-btn" bindtap="onCall">拨打电话</button>
+      </view>
+    </view>
+  </view>
+</view>

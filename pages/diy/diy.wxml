@@ -1,0 +1,118 @@
+<view class="diy-container">
+  <!-- 背景装饰 -->
+  <view class="bg-deco">
+    <view class="deco-circle dc-1"></view>
+    <view class="deco-circle dc-2"></view>
+  </view>
+
+  <!-- 产品展示区 -->
+  <view class="product-showcase">
+    <image class="product-image" src="/images/products/product3.jpg" mode="aspectFill"></image>
+    <view class="product-mask"></view>
+    <view class="product-overlay">
+      <text class="product-tag">DIY 体验</text>
+      <text class="product-title">「趣坛子」腌制套组</text>
+      <text class="product-subtitle">自制萝卜美味，乐趣无穷</text>
+    </view>
+  </view>
+
+  <!-- 产品介绍 -->
+  <view class="section-block">
+    <view class="section-header">
+      <view class="header-line"></view>
+      <text class="header-title">产品介绍</text>
+      <view class="header-line"></view>
+    </view>
+    <view class="intro-content">
+      <text class="intro-text">
+        「趣坛子」DIY 腌制套组，是包萝万象专为新手打造的一站式自制萝卜美味体验套装。套组内含脱水萝卜丁、全套秘制腌料、专用腌制罐、详细操作指南，无需额外采购任何食材与工具，零基础也能轻松做出正宗东北风味萝卜咸菜。
+      </text>
+      <view class="feature-tags">
+        <view class="feature-tag">🎯 零基础</view>
+        <view class="feature-tag">👨‍👩‍👧 亲子互动</view>
+        <view class="feature-tag">🎁 节日礼物</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 使用方法 -->
+  <view class="section-block">
+    <view class="section-header">
+      <view class="header-line"></view>
+      <text class="header-title">使用方法</text>
+      <view class="header-line"></view>
+    </view>
+    <view class="steps-list">
+      <view class="step-item">
+        <view class="step-number">01</view>
+        <view class="step-content">
+          <text class="step-title">准备工作</text>
+          <text class="step-desc">取出腌制罐，用开水烫洗消毒，彻底晾干备用</text>
+        </view>
+      </view>
+      <view class="step-item">
+        <view class="step-number">02</view>
+        <view class="step-content">
+          <text class="step-title">萝卜复水</text>
+          <text class="step-desc">将脱水萝卜丁放入容器，加清水浸泡 15–20 分钟至充分舒展，捞出挤干水分</text>
+        </view>
+      </view>
+      <view class="step-item">
+        <view class="step-number">03</view>
+        <view class="step-content">
+          <text class="step-title">调配腌料</text>
+          <text class="step-desc">将盐、酱油、花椒、辣椒粉、醋等腌料包全部混合倒入罐中，搅拌均匀</text>
+        </view>
+      </view>
+      <view class="step-item">
+        <view class="step-number">04</view>
+        <view class="step-content">
+          <text class="step-title">装罐腌制</text>
+          <text class="step-desc">把挤干的萝卜丁放入腌制罐，倒入调好的腌料，确保萝卜完全浸没</text>
+        </view>
+      </view>
+      <view class="step-item">
+        <view class="step-number">05</view>
+        <view class="step-content">
+          <text class="step-title">密封等待</text>
+          <text class="step-desc">盖紧盖子，放在阴凉通风处，腌制3–5天即可食用</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 保存小贴士 -->
+  <view class="section-block">
+    <view class="section-header">
+      <view class="header-line"></view>
+      <text class="header-title">保存小贴士</text>
+      <view class="header-line"></view>
+    </view>
+    <view class="tips-card">
+      <view class="tips-icon">💡</view>
+      <text class="tips-text">开封后建议冷藏保存，随吃随取，口感更脆爽，风味更佳！！</text>
+    </view>
+  </view>
+
+  <!-- 视频教程 -->
+  <view class="section-block">
+    <view class="section-header">
+      <view class="header-line"></view>
+      <text class="header-title">视频教程</text>
+      <view class="header-line"></view>
+    </view>
+    <view class="video-card">
+      <view class="video-icon"></view>
+      <view class="video-info">
+        <text class="video-title">关注抖音号“包萝万象”观看</text>
+        <view class="douyin-row">
+          <text class="video-douyin" id="douyin-account-text">58929527420</text>
+          <view class="copy-btn" bindtap="copyDouyin">
+            <text class="copy-icon"></text>
+            <text class="copy-text">一键复制</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

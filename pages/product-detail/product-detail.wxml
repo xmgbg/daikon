@@ -1,0 +1,17 @@
+<view class="container" wx:if="{{product}}">
+  <view class="product-card">
+    <image 
+      class="product-main-image" 
+      src="{{product.image}}" 
+      mode="aspectFill"
+      bindtap="previewImage"
+    ></image>
+
+    <view class="product-info">
+      <view class="product-name">{{product.name}}</view>
+      <view class="product-description">
+        <text>{{product.description}}</text>
+      </view>
+    </view>
+  </view>
+</view>

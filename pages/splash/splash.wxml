@@ -1,0 +1,32 @@
+<view class="splash-container">
+  <view class="bg-decoration">
+    <view class="circle circle-1"></view>
+    <view class="circle circle-2"></view>
+    <view class="circle circle-3"></view>
+  </view>
+
+  <view class="content-wrapper">
+    <view class="logo-section">
+      <image class="logo-image" src="/images/icons/logo.png" mode="aspectFit"></image>
+    </view>
+
+    <view class="brand-name">萝卜和咸菜的故事</view>
+
+    <view class="slogan">传统美味 · 匠心制作</view>
+
+    <view class="divider"></view>
+
+    <view class="description">
+      传承经典工艺，品味时光醇香
+    </view>
+
+    <button class="enter-btn" bindtap="enterApp">
+      <text class="btn-text">轻触开启</text>
+      <text class="btn-icon">→</text>
+    </button>
+  </view>
+
+  <view class="footer">
+    <text class="copyright">© 2026 包萝万象团队</text>
+  </view>
+</view>

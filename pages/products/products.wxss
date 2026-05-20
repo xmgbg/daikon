@@ -1,0 +1,183 @@
+.products-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #faf5ef 0%, #f8f2ea 50%, #f5ede3 100%);
+  padding-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 顶部导航 */
+.nav-bar {
+  width: 100%;
+  height: 100rpx;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10rpx);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2rpx 12rpx rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+.nav-back {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-icon {
+  font-size: 48rpx;
+  color: #a0845c;
+  font-weight: bold;
+}
+
+.nav-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #2c2c2c;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+}
+
+.nav-placeholder {
+  width: 60rpx;
+}
+
+/* 开篇引言 */
+.intro-section {
+  width: 100%;
+  padding: 40rpx 30rpx 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-line {
+  flex: 1;
+  max-width: 120rpx;
+  height: 2rpx;
+  background: linear-gradient(90deg, transparent 0%, #d4b896 50%, transparent 100%);
+}
+
+.intro-text {
+  font-size: 30rpx;
+  color: #8b7355;
+  margin: 0 24rpx;
+  font-weight: 500;
+  letter-spacing: 2rpx;
+  white-space: nowrap;
+}
+
+/* 三款产品错落卡片 */
+.products-section {
+  width: 90%;
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.product-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 32rpx;
+  overflow: hidden;
+  border: 2rpx solid #e8e8e8;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.product-image {
+  width: 100%;
+  height: 500rpx;
+  display: block;
+  object-fit: cover;
+}
+
+.product-content {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  min-height: 220rpx;
+}
+
+.product-label {
+  display: inline-block;
+  padding: 8rpx 24rpx;
+  border-radius: 24rpx;
+  font-size: 24rpx;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+  align-self: flex-start;
+}
+
+.product-label.original {
+  background: linear-gradient(135deg, #f5e6d0 0%, #e8d5b8 100%);
+  color: #8b7355;
+}
+
+.product-label.spicy {
+  background: linear-gradient(135deg, #f5e6d0 0%, #e8d5b8 100%);
+  color: #8b7355;
+}
+
+.product-label.hot {
+  background: linear-gradient(135deg, #f5e6d0 0%, #e8d5b8 100%);
+  color: #8b7355;
+}
+
+.product-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #2c2c2c;
+  margin-bottom: 16rpx;
+  font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+}
+
+.product-desc-line {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 8rpx;
+  line-height: 1.6;
+}
+
+.product-spec {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #f0f0f0;
+  text-align: center;
+}
+
+/* 底部收尾 */
+.footer-section {
+  width: 100%;
+  padding: 10rpx 30rpx 160rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-line {
+  display: none;
+}
+
+.footer-text {
+  font-size: 26rpx;
+  color: #8b7355;
+  font-weight: 500;
+  letter-spacing: 2rpx;
+}

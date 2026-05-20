@@ -1,0 +1,29 @@
+<view class="container">
+  <view class="header">
+    <view class="title">🌸 支持我们</view>
+    <view class="subtitle">您的支持是我们最大的动力</view>
+  </view>
+
+  <view class="content">
+    <view class="count-card">
+      <view class="count-number">{{flowerCount}}</view>
+      <view class="count-text">累计收到小花</view>
+    </view>
+
+    <view class="action-card">
+      <view class="action-title">为我们送花</view>
+      <button class="send-btn" bindtap="sendFlower">
+        🌸 送小花
+      </button>
+    </view>
+
+    <view class="thanks-card">
+      <view class="thanks-title">💌 致谢</view>
+      <view class="thanks-text">
+        感谢您一路以来的支持与陪伴
+        正是因为有了您的信任
+        我们才能越走越远
+      </view>
+    </view>
+  </view>
+</view>

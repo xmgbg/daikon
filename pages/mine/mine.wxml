@@ -1,0 +1,67 @@
+<view class="mine-container">
+  <!-- 背景装饰 -->
+  <view class="bg-deco">
+    <view class="deco-circle dc-1"></view>
+    <view class="deco-circle dc-2"></view>
+  </view>
+
+  <!-- 品牌信息卡片 -->
+  <view class="info-card" bindtap="goToBrand">
+    <image class="info-avatar" src="/images/icons/logo.png" mode="aspectFit"></image>
+    <view class="info-text">
+      <text class="info-name">品牌详情</text>
+      <text class="info-desc">传承传统工艺，品味自然之味</text>
+    </view>
+    <text class="info-arrow">›</text>
+  </view>
+
+  <!-- 常用服务 -->
+  <view class="menu-card">
+    <view class="menu-title">常用服务</view>
+    <view class="menu-item" bindtap="navigateTo" data-url="/pages/feedback/feedback">
+      <text class="menu-icon">📋</text>
+      <text class="menu-text">意见反馈</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-divider"></view>
+    <view class="menu-item" bindtap="navigateTo" data-url="/pages/join-us/join-us">
+      <text class="menu-icon">🤝</text>
+      <text class="menu-text">加入我们</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-divider"></view>
+    <view class="menu-item" bindtap="navigateTo" data-url="/pages/support/support">
+      <text class="menu-icon">🌸</text>
+      <text class="menu-text">支持我们</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-divider"></view>
+    <view class="menu-item" bindtap="goToContact">
+      <text class="menu-icon">📞</text>
+      <text class="menu-text">联系我们</text>
+      <text class="menu-arrow">›</text>
+    </view>
+  </view>
+
+  <!-- 设置 -->
+  <view class="menu-card">
+    <view class="menu-title">设置</view>
+    <view class="menu-item" bindtap="openSettings">
+      <text class="menu-icon">⚙️</text>
+      <text class="menu-text">通用设置</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-divider"></view>
+    <view class="menu-item" bindtap="clearCache">
+      <text class="menu-icon">🗑️</text>
+      <text class="menu-text">清除缓存</text>
+      <text class="menu-value">{{cacheSize}}</text>
+    </view>
+  </view>
+
+  <!-- 底部版本信息 -->
+  <view class="version-footer">
+    <text class="version-text">包萝万象 v1.0.0</text>
+    <text class="copyright-text">© 2026 包萝万象团队</text>
+  </view>
+</view>

@@ -1,0 +1,121 @@
+.brand-detail-container {
+  min-height: 100vh;
+  background-color: #FFF8F0;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+
+/* LOGO区域 */
+.logo-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60rpx;
+  margin-bottom: 50rpx;
+}
+
+.brand-logo {
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.1);
+}
+
+/* 内容卡片 */
+.content-card {
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 24rpx;
+  padding: 30rpx 40rpx;
+  margin-bottom: 30rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+}
+
+/* 品牌介绍 */
+.card-title {
+  font-size: 32rpx;
+  color: #6D4F3E;
+  font-weight: 600;
+  margin-bottom: 0rpx;
+  text-align: center;
+}
+
+.brand-intro {
+  display: block;
+  font-size: 28rpx;
+  color: #8C6D50;
+  line-height: 1.6;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+/* 团队成员 */
+.team-members {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24rpx;
+}
+
+.member-name {
+  font-size: 28rpx;
+  color: #8C6D50;
+  white-space: nowrap;
+}
+
+/* 抖音号 */
+.douyin-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.douyin-label {
+  font-size: 28rpx;
+  color: #8C6D50;
+}
+
+.douyin-account {
+  font-size: 28rpx;
+  color: #6D4F3E;
+  font-weight: 600;
+}
+
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFD700;
+  border-radius: 30rpx;
+  padding: 6rpx 16rpx;
+  gap: 6rpx;
+  box-shadow: 0 4rpx 12rpx rgba(255, 215, 0, 0.3);
+}
+
+.copy-btn:active {
+  transform: scale(0.95);
+}
+
+.copy-icon {
+  font-size: 24rpx;
+}
+
+.copy-text {
+  font-size: 22rpx;
+  color: #6D4F3E;
+  font-weight: 600;
+}
+
+/* 品牌介绍 */
+.brand-intro {
+  font-size: 28rpx;
+  color: #8C6D50;
+  line-height: 1.6;
+  text-align: justify;
+  text-indent: 2em;
+}

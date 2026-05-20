@@ -1,0 +1,73 @@
+.container {
+  padding: 40rpx;
+  background: linear-gradient(135deg, #fff9f0 0%, #fff5e6 50%, #ffe8d6 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80rpx;
+}
+
+.join-content {
+  background-color: white;
+  border-radius: 15rpx;
+  padding: 40rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+}
+
+.section {
+  margin-bottom: 60rpx;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+
+.section-content {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+}
+
+.phone-section {
+  text-align: center;
+}
+
+.phone-number {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #ff6b35;
+  margin-bottom: 30rpx;
+  animation: breathe 2s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.call-btn {
+  background-color: #ff6b35;
+  color: white;
+  border: none;
+  border-radius: 10rpx;
+  padding: 20rpx 60rpx;
+  font-size: 28rpx;
+}
+
+.call-btn:active {
+  background-color: #e55a2b;
+}

@@ -1,0 +1,43 @@
+<view class="container">
+  <!-- 背景装饰 -->
+  <view class="bg-deco">
+    <view class="deco-circle dc-1"></view>
+    <view class="deco-circle dc-2"></view>
+  </view>
+
+  <!-- 品牌信息卡片 -->
+  <view class="info-card">
+    <image class="info-avatar" src="/images/icons/logo.png" mode="aspectFit"></image>
+  </view>
+
+  <!-- 反馈内容 -->
+    <view class="tips-card">
+      <view class="tips-title">温馨提示</view>
+      <view class="tips-list">
+        <view class="tips-item">✓ 欢迎提出宝贵意见</view>
+        <view class="tips-item">✓ 我们会认真参考每一条建议</view>
+        <view class="tips-item">✓ 持续改进，为您提供更好的服务</view>
+      </view>
+    </view>
+
+    <view class="input-section">
+      <view class="input-label">您的建议</view>
+      <textarea 
+        class="suggestion-input" 
+        placeholder="请留下您的宝贵建议，帮助我们做得更好..." 
+        value="{{suggestion}}"
+        bindinput="onSuggestionInput"
+        maxlength="500"
+        auto-height
+      ></textarea>
+      <view class="char-count">{{suggestion.length}}/500</view>
+    </view>
+
+    <button class="submit-btn" bindtap="submitSuggestion">提交建议</button>
+  </view>
+
+  <view class="footer-decoration">
+    <view class="decoration-item">🌟</view>
+    <view class="decoration-item">⭐</view>
+    <view class="decoration-item">🌟</view>
+  </view>

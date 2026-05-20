@@ -1,0 +1,60 @@
+<view class="products-container">
+  <!-- 顶部导航 -->
+  <view class="nav-bar">
+    <view class="nav-placeholder"></view>
+    <text class="nav-title">产品展示</text>
+    <view class="nav-placeholder"></view>
+  </view>
+
+  <!-- 开篇引言 -->
+  <view class="intro-section">
+    <view class="divider-line"></view>
+    <text class="intro-text">一味家常咸菜，三款本真风味</text>
+    <view class="divider-line"></view>
+  </view>
+
+  <!-- 三款产品错落卡片 -->
+  <view class="products-section">
+    <!-- 产品1 - 原味 -->
+    <view class="product-card" bindtap="goToDetail" data-id="1">
+      <image class="product-image" src="/images/products/product1.jpg" mode="aspectFill"></image>
+      <view class="product-content">
+        <view class="product-label original">“卜想干”</view>
+        <text class="product-name">袋装干萝卜丁</text>
+        <text class="product-desc-line">低温脱水，锁住萝卜天然本味</text>
+        <text class="product-desc-line">多场景适配，家用餐饮皆可备用</text>
+        <text class="product-spec">规格：500g/袋 | 基础原料</text>
+      </view>
+    </view>
+
+    <!-- 产品2 - 微辣 -->
+    <view class="product-card" bindtap="goToDetail" data-id="2">
+      <image class="product-image" src="/images/products/product2.jpg" mode="aspectFill"></image>
+      <view class="product-content">
+        <view class="product-label spicy">“咸不住”</view>
+        <text class="product-name">罐装萝卜咸菜  🔥（爆款）</text>
+        <text class="product-desc-line">古法慢腌，坚守地道家常风味</text>
+        <text class="product-desc-line">开罐即食，适配日常佐餐所需</text>
+        <text class="product-spec">规格：280g/罐 | 佐餐拌饭</text>
+      </view>
+    </view>
+
+    <!-- 产品3 - 特辣 -->
+    <view class="product-card" bindtap="goToDetail" data-id="3">
+      <image class="product-image" src="/images/products/product3.jpg" mode="aspectFill"></image>
+      <view class="product-content">
+        <view class="product-label hot">“趣坛子”</view>
+        <text class="product-name">DIY 腌制套组</text>
+        <text class="product-desc-line">全套物料配齐，零基础轻松制作</text>
+        <text class="product-desc-line">亲手参与腌制，体验与礼赠兼具</text>
+        <text class="product-spec">规格：500ml/罐 |手工自制</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 底部收尾 -->
+  <view class="footer-section">
+    <view class="footer-line"></view>
+    <text class="footer-text">多款好物，藏尽不同家常烟火</text>
+  </view>
+</view>
