@@ -1,0 +1,17 @@
+# IDE and editor settings
+.idea/
+.vscode/
+*.iml
+
+# WeChat DevTools local settings
+project.private.config.json
+
+# Dependencies and generated files
+node_modules/
+miniprogram_npm/
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini
